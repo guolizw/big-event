@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/big_event
+    username: root
+    password: 20021004yxl
+
+  servlet:
+    multipart:
+      # 单个文件大小为100MB
+      max-file-size: 100MB
+      # 总上传的数据大小5MB
+      max-request-size: 100MB
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+#开启驼峰命名和下划线命名的自动转换 数据库列名和类的属性名对应
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
